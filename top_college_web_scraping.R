@@ -1,8 +1,4 @@
----
-title: "R Notebook"
-output: html_notebook
----
-```{r}
+
 library(rvest)
 library(stringr)
 library(tidyr)
@@ -37,6 +33,5 @@ top_ten_colleges <- data.frame(name=final_titles,location=final_locations, ranki
 knitr::kable(top_ten_colleges)
 
 
-```
 
 
