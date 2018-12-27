@@ -20,7 +20,6 @@ locations <- colleges_page %>% html_nodes(xpath = '//*[@class="display-block blo
 final_locations <- locations %>% str_trim()
 tuition <- colleges_page %>% html_nodes(xpath='//*[@class="display-inline-for-medium-up inline-right-tight-for-medium-up border-right-for-medium-up"]') %>% html_text() %>% str_trim()
 tuition <- tuition[1:20]
-library(gsubfn)
 tuitions <- str_extract(tuition[1:20], '^\\$[0-9,]*')
 final_tuitions <- tuitions[!is.na(tuitions)]
 inds <- seq(2, 20, by=2)
