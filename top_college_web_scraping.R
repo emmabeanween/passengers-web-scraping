@@ -37,7 +37,6 @@ final_descriptions <- descriptions
 top_ten_colleges <- data.frame(name=final_titles,location=final_locations, ranking=final_rankings, undergrad_enrollment  = final_undergrad_enrollment, tuition  = final_tuitions, description = final_descriptions)
 knitr::kable(top_ten_colleges)
 
-#first node, children - get title
 
 ```
 
